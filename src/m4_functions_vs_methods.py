@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -82,6 +82,8 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
 
     turtle3()
+    try_methods()
+    try_functions()
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
@@ -180,6 +182,14 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    shuri = rg.SimpleTurtle()
+    shuri.speed = 10
+    shuri.pen = rg.Pen('brown', 5)
+
+    shuri.forward(150)
+    shuri.left(90)
+    shuri.forward(50)
+    shuri.backward(100)
     ###########################################################################
     # TODO: 3. Implement and this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
@@ -194,8 +204,39 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+    tchalla = rg.SimpleTurtle()
+    tchalla.speed = 10
+    tchalla.pen = rg.Pen('purple', 20)
+
+    tchalla.pen_up()
+    tchalla.go_to(rg.Point(200, 100))
+
+    tchalla.pen_down()
+    tchalla.go_to(rg.Point(300, 30))
+
+    okoye = rg.SimpleTurtle()
+    okoye.speed = 20
+    okoye.pen = rg.Pen('red', 15)
+
+    okoye.pen_up()
+    okoye.go_to(rg.Point(100, 200))
+
+    okoye.pen_down()
+    okoye.go_to(rg.Point(0, 0))
+
+    nakia = rg.SimpleTurtle()
+    nakia.speed = 30
+    nakia.pen =rg.Pen('green', 10)
+
+    nakia.pen_up()
+    nakia.go_to(rg.Point(-50, 50))
+
+    nakia.pen_down()
+    nakia.go_to(rg.Point(100, 100))
+
+
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #    NOTE: This function requires
