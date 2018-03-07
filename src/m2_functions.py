@@ -104,6 +104,21 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+  """
+  Construct a default Simple turtle to do a task in the
+  the code like going foward and making a circle.
+  """
+  shuri = rg.SimpleTurtle()
+  shuri.speed = 20
+  shuri.pen = rg.Pen('yellow', 20)
+
+  shuri.backward(300)
+
+  shuri.begin_fill()
+  shuri.draw_circle(60)
+  shuri.end_fill()
+
 ###############################################################################
 #
 # DONE: 3.
@@ -138,7 +153,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
