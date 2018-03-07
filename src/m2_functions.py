@@ -106,7 +106,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -116,19 +116,19 @@ def turtle3():
 #     -- How many times does   main   call the   turtle1   function?
 #            (Answer: 1)
 #     -- How many times does   main   call the   turtle2   function?
-#            (Hint: the answer is NOT 1.)
+#            (Hint: the answer is NOT 1.) Calls turtle2 twice
 #     -- What line of code calls the   main   function?
 #            (Answer: look at the LAST line of this module, far below.)
-#
+#               line 237
 #     ** ASK QUESTIONS if you are uncertain about any of the answers. **
 #
 #   RELATE what is DRAWN to the CODE above.  Be sure you understand:
-#       -- WHEN does the code in   main   run?
-#       -- WHEN does the code in   turtle1   run?
-#                    the code in   turtle2   run?
-#                    the code in   turtle3   run?
+#       -- WHEN does the code in   main   run? At the end of the code
+#       -- WHEN does the code in   turtle1   run? First
+#                    the code in   turtle2   run? third and last
+#                    the code in   turtle3   run? second
 #       -- For each of the above, WHY does that code run when it does?
-#
+#       Because the code runs in the order that they are called.
 #     ** ASK QUESTIONS if you are uncertain about any of the answers. **
 #
 #   When you believe you understand the answers
