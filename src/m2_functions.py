@@ -33,6 +33,7 @@ def main():
 
     turtle1()
     turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -106,19 +107,36 @@ def turtle3():
 
 
 def turtle4():
-  """
-  Construct a default Simple turtle to do a task in the
-  the code like going foward and making a circle.
-  """
-  shuri = rg.SimpleTurtle()
-  shuri.speed = 20
-  shuri.pen = rg.Pen('purple', 10)
+    """
+    Construct a default Simple turtle to do a task in the
+    the code like going foward and making a circle.
+    """
+    shuri = rg.SimpleTurtle()
+    shuri.speed = 20
+    shuri.pen = rg.Pen('cyan', 10)
 
-  shuri.backward(300)
+    shuri.backward(300)
 
-  shuri.begin_fill()
-  shuri.draw_circle(60)
-  shuri.end_fill()
+    shuri.begin_fill()
+    shuri.draw_circle(60)
+    shuri.end_fill()
+
+
+def turtle5():
+    """
+    Construct a default SimpleTurtle to do task
+    """
+    tchalla = rg.SimpleTurtle()
+    tchalla.speed = 15
+    tchalla.pen = rg.Pen('purple', 25)
+
+    tchalla.right(90)
+    tchalla.forward(200)
+
+    tchalla.begin_fill()
+    tchalla.draw_circle(100)
+    tchalla.end_fill()
+
 
 ###############################################################################
 #
@@ -200,7 +218,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #
