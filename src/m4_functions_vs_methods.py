@@ -84,6 +84,7 @@ def main():
     turtle3()
     try_methods()
     try_functions()
+    try_methods_and_functions()
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
@@ -191,7 +192,7 @@ def try_methods():
     shuri.forward(50)
     shuri.backward(100)
     ###########################################################################
-    # TODO: 3. Implement and this function, per its doc-string above.
+    # DONE: 3. Implement and this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
 
@@ -226,14 +227,13 @@ def try_functions():
 
     nakia = rg.SimpleTurtle()
     nakia.speed = 30
-    nakia.pen =rg.Pen('green', 10)
+    nakia.pen = rg.Pen('green', 10)
 
     nakia.pen_up()
     nakia.go_to(rg.Point(-50, 50))
 
     nakia.pen_down()
     nakia.go_to(rg.Point(100, 100))
-
 
     ###########################################################################
     # DONE: 4. Implement and test this function, per its doc-string above.
@@ -280,8 +280,41 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+    wakabi = rg.SimpleTurtle()
+    wakabi.speed = 5
+    wakabi.pen = rg.Pen('blue', 5)
+
+    wakabi.backward(150)
+
+    wakabi.speed = 1
+
+    for _ in range(2):
+        wakabi.draw_square(100)
+        wakabi.left(30)
+
+    wakabi.speed = 5
+    wakabi.pen = rg.Pen('red', 5)
+
+    for _ in range(10):
+        wakabi.draw_square(50)
+        wakabi.left(15)
+
+        wakabi.speed = 100
+        wakabi.pen = rg.Pen('red', 35)
+
+    for _ in range(2):
+        wakabi.draw_square(300)
+        wakabi.left(60)
+
+        wakabi.pen = rg.Pen('black', 3)
+
+        wakabi.backward(200)
+
+        wakabi.draw_circle(30)
+        wakabi.draw_square(50)
+
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
