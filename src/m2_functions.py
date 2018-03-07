@@ -32,6 +32,7 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
@@ -111,7 +112,7 @@ def turtle4():
   """
   shuri = rg.SimpleTurtle()
   shuri.speed = 20
-  shuri.pen = rg.Pen('yellow', 20)
+  shuri.pen = rg.Pen('purple', 10)
 
   shuri.backward(300)
 
@@ -183,7 +184,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
